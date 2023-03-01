@@ -1,0 +1,247 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General */
+body {
+  font-family: "Avenir Next", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin: 10px 0;
+  font-size: 40px;
+}
+
+h2 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Header atau navbar */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #26d0c9;
+  color: #fff;
+  padding: 20px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.header-logo {
+  font-size: 36px;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-list li {
+  padding: 10px 20px;
+}
+
+/* Content */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(/img/banner.png);
+  background-size: cover;
+  background-position: center;
+  color: #b7b7b7;
+}
+
+.content h1 {
+  font-size: 50px;
+  color: #b7b7b7;
+  margin-bottom: 10px;
+}
+
+.content span {
+  color: #ff4a4a;
+}
+
+/* About */
+.about {
+  background-color: #26d0c9;
+  padding: 100px 20px;
+  color: #fff;
+}
+
+.about img {
+  border-radius: 30%;
+  width: 100px;
+  margin-right: 20px;
+  float: left;
+}
+
+.tentang {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Portfolio */
+.portofolio {
+  background-color: #581575;
+  padding: 100px 20px;
+  color: #fff;
+}
+
+.project {
+  margin-bottom: 30px;
+}
+
+.project img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.project-details {
+  margin-top: 10px;
+}
+
+.project-details h4 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.project-details p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.project-details button:hover {
+  color: #9000ff;
+}
+
+.project-details button {
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.project-details button:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+/* contact */
+
+.contact {
+  background-color: #581575;
+  padding: 200px 20px;
+  color: #fff;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contact-list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-list li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.contact-label {
+  margin-right: 10px;
+  width: 80px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+a:hover {
+  color: #9000ff;
+}
+
+a[target="_blank"]::after {
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  align-items: center;
+  background-color: #26d0c9;
+  color: #fff;
+  padding: 5px;
+}
+
+.footer-list {
+  display: flex;
+}
+
+.footer-list li {
+  padding: 10px 20px;
+}
+
+/* Responsive mobile */
+@media screen and (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .about {
+    padding: 130px 20px;
+  }
+
+  .portofolio {
+    padding: 130px 20px;
+  }
+
+  .header-logo {
+    margin-bottom: 20px;
+  }
+
+  .header-logo a {
+    font-size: 20px;
+  }
+}
